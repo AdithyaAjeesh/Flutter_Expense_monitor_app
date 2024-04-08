@@ -60,7 +60,7 @@ class ExpenseDetailScreen extends StatelessWidget {
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                  provider.deleteExpenseProvider(index);
+                  provider.deleteExpenseProvider(index, context);
                 },
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
                 child: const Text(

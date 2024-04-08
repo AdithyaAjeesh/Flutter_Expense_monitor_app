@@ -66,8 +66,9 @@ class FunctionProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void> deleteExpenseProvider(index) async {
+  Future<void> deleteExpenseProvider(index, context) async {
     expenseService.deleteExpense(index);
+    Navigator.of(context).pop();
     notifyListeners();
   }
 
